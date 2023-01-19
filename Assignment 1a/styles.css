@@ -1,0 +1,98 @@
+p{
+    text-align: center;
+
+}
+
+h1{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0%;
+}
+
+h3{
+    background-color: aliceblue;
+    margin: 15px;
+    border-color: black;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+a{
+    padding: 10px;
+}
+
+body{
+    background-size:contain;
+    background-image: url(images/image4.jpeg);
+    height: 100vh;
+}
+
+.redirect{
+    background-image: url(images/image4.jpeg);
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.shopspecials{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.special{
+    display: flex;
+    align-items: center;
+    flex-direction:row;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px black;
+    flex-basis: 650px;
+}
+
+.special img{
+    height: 100px;
+    width: 100px;
+    border: 1px black;
+}
+
+.special h4{
+    text-transform: capitalize;
+    font-size: 25px;
+}
+
+button{
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.container{
+    position: relative;
+    padding: 20px 0 30px 0;
+}
+
+.title h4{
+    font-size:medium;
+    margin-bottom: 5px;
+
+}
+
+.wrapper{
+    margin: 100px;
+    width: 800px;
+}
+
+.Prices{
+    text-align: center;
+    margin: auto;
+    width: 20%;
+    border-collapse: collapse;
+    color:greenyellow;
+    padding: 20px;
+    font-size:x-large;
+}
+
+

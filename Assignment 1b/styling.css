@@ -1,0 +1,50 @@
+.container h2{
+    text-align: center;
+    padding: 10px;
+
+}
+
+.container{
+    position: relative;
+    border-radius: 5px;
+    padding: 20px 0 30px 0;
+
+}
+
+body{
+    background-color: beige;
+
+}
+
+.title{
+    text-align: center;
+}
+
+.audio-wrapper{
+    justify-content: center;
+}
+
+audio{
+    margin: 100px auto;
+}
+
+.wrapper{
+    width: 1000px;
+}
+
+header{
+    text-align: center;
+    padding: 25px;
+    color: rosybrown;
+}
+
+h3 nav{
+    background-color:rgba(27, 30, 40, 0.94);
+    border-radius: 40px;
+}
+
+.famous{
+    display: flex;
+    flex-wrap: wrap;
+}
+
