@@ -1,0 +1,406 @@
+#about{
+    margin: auto;
+}
+
+#about h1{
+    color: beige;
+}
+
+.text{
+    color: beige;
+}
+
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.skill{
+    color: beige;
+    width: 500px;
+    margin: 60px auto;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.skill li{
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.bar{
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25,1);
+}
+
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103, 1)100%);
+}
+
+.Python{
+    width: 95%;
+    animation: Python 3s;
+}
+
+.Java{
+    width: 90%;
+    animation: Java 3s;
+}
+
+.Machine-Learning{
+    width: 97%;
+    animation: Machine-Learning 3s;
+}
+
+.Pandas{
+    width: 90%;
+    animation: Pandas 3s;
+}
+
+@keyframes Python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 95%;
+    }
+}
+
+@keyframes Java{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes Machine-Learning{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 97%;
+    }
+}
+
+@keyframes Pandas{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+.Home1{
+    margin: auto;
+    padding: 80px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image{
+    display: flex;
+    height: 400px;
+    width: 50%;
+}
+
+nav{
+    margin: auto;
+    padding: 8px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: antiquewhite;
+    position: fixed;
+
+}
+
+nav h2{
+    padding-left: 50px;
+}
+
+nav ul{
+    padding-right: 80px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.Introduction{
+    padding: 75px;
+}
+
+.Introduction h1{
+    margin-bottom: 10px;
+    font-size: 50px;
+    color: darksalmon;
+}
+
+body{
+    background: url(images/wall.jpeg);
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.Introduction p{
+    margin-bottom: 20px;
+    line-height: 22px;
+    color: beige;
+}
+
+.Introduction a{
+    display:inline;
+    margin: 30px 0;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    background: antiquewhite; 
+    color:#353b48;
+
+
+}
+
+.pic img{
+    padding: 50px;
+    border-radius: 50%;
+    float: left;
+    width: 20%;
+}
+
+
+
+#projects{
+    margin: auto;
+}
+
+
+.headings{
+    padding: 50px;
+    font-size: 25px;
+    font-family: century;
+    color: beige;
+}
+
+.projects1{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.row{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.box{
+    height: 450px;
+    width: 25%;
+    padding: 10px;
+    border: 1px black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    background-size: 100% 200%;
+    overflow: auto;
+    background: linear-gradient(to top, #ffc381 40%, white 60%);
+    transition: all 0.5s;
+    color:black;
+}
+
+.box:hover{
+    border: none;
+    color:teal;
+    background-position: left bottom;
+    box-shadow: 0 0 20px rgb(10,30,90);
+}
+
+.box h1{
+    font-size: 35px;
+    padding: 5px;
+}
+.box h2{
+    font-size: 27px;
+}
+
+
+.box h4,h2{
+    padding: 10px;
+}
+
+.box img{
+    height: 80px;
+    width: 15%;
+}
+
+.gallery{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    width: inherit;
+    flex-direction: row;
+    color: beige;
+
+}
+
+.img1{
+    padding: 10px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0,1);
+    transition: 1s;
+}
+
+.img1 img{
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+
+.img1:hover{
+    transform: scale(1.5);
+    z-index: 1;
+}
+
+.info{
+    padding-left: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+
+.email a:link{
+    color: darkkhaki;
+}
+
+.linkedin a:link{
+    color: darkkhaki;
+}
+
+.linkedin a:visited{
+    color: cadetblue;
+}
+
+.footer{
+    width: 100%;
+    height: 30px;
+    padding: 5px 0px;
+    text-align: center;
+    color: black;
+    background-color: aliceblue;
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px){
+
+body{
+    background-attachment: fixed;
+}
+nav{
+    width: 100%;
+}
+
+nav h2{
+    padding-left: 0px;
+
+}
+
+.Introduction h1{
+    font-size: 40px;
+}
+
+.pic img{
+    float: none;
+}
+
+.row{
+    padding-left: 20px;
+    display: block;
+
+}
+
+.box{
+    width: 80%;
+}
+
+.gallery{
+    flex-direction: column;
+}
+
+.Introduction a:link{
+    width: 80%;
+    font-size: 12px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.text{
+    width: 100%;
+    padding-left: 50px;
+}
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 950px){
+body{
+    background-attachment: fixed;
+}
+nav{
+    width: 100%;
+}
+    
+nav h2{
+    padding-left: 0px;
+    
+}
+.Introduction h1{
+    font-size: 40px;
+}    
+}
