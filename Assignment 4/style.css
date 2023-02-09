@@ -1,0 +1,29 @@
+.table-t{
+    width: 1240px;
+    padding: 0px;
+    border: 1px solid black;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.table-t-header{
+    font-size: medium;
+    text-align: center;
+    color: darkcyan;
+}
+
+.table-t th{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    color: darkcyan;
+}
+
+.table-t td{
+    text-align: center;
+    padding: 5px;
+}
+
+.table-t{
+    background-color: bisque;
+}
