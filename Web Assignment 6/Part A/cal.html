@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="container">
+        <h3 id="username"></h3>
+        <form id="calculateForm">
+            <p>
+                <label for="numberOne">Enter 1st Number:</label>
+                <input type="text" id="numberOne" name="numberOne" placeholder="Enter first number" />
+            </p>
+            <p>
+                <label for="numberTwo">Enter 2nd number:</label>
+                <input type="text" id="numberTwo" name="numberTwo" placeholder="Enter second number" />
+            </p>
+            <br><br>
+            <input type="button" id="btnAdd" class="button" value="Addition" onclick="Operation('+')" />
+            <input type="button" id="btnSubtract" class="button" value="Subtraction" onclick="Operation('-')" />
+            <input type="button" id="btnMultiply" class="button" value="Multiplication" onclick="Operation('*')" />
+            <input type="button" id="btnDivide" class="button" value="Division" onclick="Operation('/')" />
+            <br /> <br />
+
+            <label for="Result">Result:</label>
+            <div id="result"></div> 
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $("#calculateForm").validate({
+                rules:{
+                    numberOne: {
+                        required: true,
+                        no_type: true,
+                    },
+                    numberTwo: {
+                       required: true,
+                       no_type: true, 
+                    },
+                },
+                messages:{
+                    numberOne:{
+                        required:"Please enter a number to proceed",
+                    },
+                    numberTwo:{
+                        required:"Please enter a number to proceed",
+                    },
+                },
+            });
+        });
+
+        jQuery.validator.addMethod(
+            "no_type",
+            function(value,element){
+                return(
+                    this.optional(element) || /^[+-]?([0-9]*[.])?[0-9]+$/.test(value)
+                );
+            },
+            "Please enter a valid number"
+        );
+    </script>
+
+    <script>
+        var user = GetURLParameter("userName");
+
+        function GetURLParameter(sParam){
+            var sPageURL = window.location.search.substring(1);
+            var sURLVariables = sPageURL.split("&");
+            for(var i=0; i < sURLVariables.length; i++){
+                var sParameterName = sURLVariables[i].split("=");
+                if(sParameterName[0] == sParam){
+                    return sParameterName[1];
+                }
+            }
+        }
+
+        document.getElementById("username").innerHTML =
+         "Hello" + "   " +
+          user + "    " + 
+          
+          "Please perform the desired operation";
+        var Operation = (operand) => {
+            var regexName = /^[+-]?([0-9]*[.])?[0-9]+$/;
+            var a,b,answer;
+            console.log(operand);
+            if(document.getElementById("numberOne").value.trim().length == 0){
+                alert("Enter 1st number");
+                a = null;
+            }
+            else{
+                if(document.getElementById("numberOne").value.trim().match(regexName)){
+                    a = parseFloat(document.getElementById("numberOne").value);
+                }
+                else{
+                    alert("Number only");
+                }
+            }
+            if(document.getElementById("numberTwo").value.trim().length == 0){
+                alert("Enter 2nd number");
+                b = null;
+            }
+            else{
+                if(document.getElementById("numberTwo").value.trim().match(regexName)){
+                    b = parseFloat(document.getElementById("numberTwo").value);
+                }
+                else{
+                    alert("Number only");
+                }
+            }
+            console.log(a);
+            console.log(b);
+            if(a != null && b != null){
+                if(operand == "+"){
+                    answer = a + b;
+                    console.log(a+b);
+                }
+                else if(operand == "-"){
+                    answer = a - b;
+                    console.log(a-b);
+                }
+                else if(operand == "*"){
+                    answer = a*b;
+                    console.log(a*b);
+                }
+                else{
+                    if(b == 0){
+                        alert("Division by zero is not possible");
+                        answer = "Infinity";
+                    }
+                    else{
+                        answer = a/b;
+                        console.log(a/b);
+                    }
+                }
+                document.getElementById("result").innerHTML = `<input type="text" value="${answer.toFixed(2)}" class="field left" readonly>`;
+            }
+        };
+
+        Operation(operand);
+    </script>
+</body>
+</html>
