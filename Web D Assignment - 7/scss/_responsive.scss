@@ -1,0 +1,104 @@
+@import 'config';
+
+
+@media screen and (max-width: 375px){
+    .sAbout{
+        img{
+            width: 250px;
+        }
+    }
+}
+
+@media screen and (max-width: 425px){
+    .progLan{
+        img{
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .projectC{
+        width: 100%;
+        height: 400px;
+    }
+    figure{
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    }
+    figcaption{
+        padding-top: 30px;
+        margin: 10px;
+    }
+}
+@media screen and (max-width:550px){
+    .projectC{
+        width: 100%;
+        height: 400px;
+    }
+    .sAbout{
+        display: block;
+    }
+}
+@media screen and (max-width: 768px){
+    .sAbout{
+        display: block;
+
+        img{
+            width: 400px;
+        }
+    }
+    .about{
+        width: 100%;
+        h1{
+            font-size: 40px;
+        }
+    }
+    h2{
+        font-size: 40px;
+    }
+    .progLan{
+        img{
+            margin: 10px;
+            width: 60px;
+            height: 60px;
+        }
+    }
+    .projectC{
+        width: 50%;
+        height: 400px;
+    }
+    figure{
+        img{
+            height: 300px;
+            width: 300px;
+        }
+    }
+    figcaption{
+        padding-top: 35px;
+        margin: 10px;
+    }
+    .contdetails{
+        img{
+            height: 110px;
+            width: 110px;
+            padding: 30px;
+        }
+        margin-top: 0px;
+        width: 100%;
+    }
+    .headingTitle{
+        .rotating{
+            span{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 910px){
+    .projectC{
+        width: 40%;
+        height: 400px;
+    }
+}

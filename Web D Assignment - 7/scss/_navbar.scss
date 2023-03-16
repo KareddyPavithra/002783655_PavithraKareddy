@@ -1,0 +1,27 @@
+@import 'config';
+
+header{
+    nav{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items:center;
+    }
+}
+
+nav{
+    ul{
+        li{
+            margin: 10px 20px;
+            list-style: none;
+            display: inline-block;
+
+        }
+    }
+    a{
+        font-size: 25px;
+        text-decoration: none;
+        color: $nav-text-color;
+        
+    }
+}

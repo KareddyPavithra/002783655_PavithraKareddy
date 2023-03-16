@@ -1,0 +1,263 @@
+.sAbout {
+  display: flex;
+  padding: 30px 0;
+  margin: 0 auto;
+}
+.sAbout .about {
+  display: flex;
+  margin-top: 100px;
+  width: 100%;
+  margin-right: 50px;
+  margin-left: 25px;
+}
+.sAbout .about p {
+  font-size: 30px;
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+span::nth-child(1) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span::nth-child(2) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span::nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.headingTitle h1 {
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.line {
+  background: crimson;
+  border-radius: 5px;
+  margin: 5px auto;
+  width: 150px;
+  height: 6px;
+}
+
+.contactsss {
+  margin-top: 50px;
+}
+
+.contdetails {
+  width: 100%;
+  float: none;
+  margin-top: 50px;
+}
+
+.contdetails img {
+  padding: 27px;
+  width: 240px;
+  height: 270px;
+}
+
+.skillss {
+  display: flex;
+  margin-top: 40px;
+}
+
+.progLan {
+  width: 100%;
+}
+
+.projectC {
+  display: grid;
+  height: 400px;
+  margin: 50px 20px;
+  margin-top: 80px;
+}
+
+.projectIn {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.projectFirst {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  color: rgb(81, 198, 147);
+  position: absolute;
+}
+.projectFirst p {
+  font-size: 20px;
+}
+
+figure img {
+  width: 300px;
+  height: 300px;
+}
+
+figcaption {
+  color: rgb(81, 198, 147);
+  padding-top: 35px;
+  font-size: 30px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 10px 20px;
+  list-style: none;
+  display: inline-block;
+}
+nav a {
+  font-size: 25px;
+  text-decoration: none;
+  color: rgb(18, 14, 24);
+}
+
+.footerStn {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 30px;
+  overflow: auto;
+  width: 100%;
+  padding: 30px;
+  color: rgb(60, 0, 255);
+  background-color: rgb(245, 223, 220);
+}
+
+@media screen and (max-width: 375px) {
+  .sAbout img {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .progLan img {
+    width: 40px;
+    height: 40px;
+  }
+  .projectC {
+    width: 100%;
+    height: 400px;
+  }
+  figure img {
+    width: 200px;
+    height: 200px;
+  }
+  figcaption {
+    padding-top: 30px;
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .projectC {
+    width: 100%;
+    height: 400px;
+  }
+  .sAbout {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sAbout {
+    display: block;
+  }
+  .sAbout img {
+    width: 400px;
+  }
+  .about {
+    width: 100%;
+  }
+  .about h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  .progLan img {
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+  }
+  .projectC {
+    width: 50%;
+    height: 400px;
+  }
+  figure img {
+    height: 300px;
+    width: 300px;
+  }
+  figcaption {
+    padding-top: 35px;
+    margin: 10px;
+  }
+  .contdetails {
+    margin-top: 0px;
+    width: 100%;
+  }
+  .contdetails img {
+    height: 110px;
+    width: 110px;
+    padding: 30px;
+  }
+  .headingTitle .rotating span {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 910px) {
+  .projectC {
+    width: 40%;
+    height: 400px;
+  }
+}
+.btn-project {
+  margin: 4px 2px;
+  padding: 15px 30px;
+  text-align: center;
+  background-color: cadetblue;
+  display: inline-block;
+  font-size: 16px;
+  border: white;
+}
+
+.btn-project {
+  border: 2px solid red;
+  color: aliceblue;
+}
+.btn-project:hover {
+  color: black;
+  background-color: skyblue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, serif, Times;
+  background-color: rgb(238, 151, 89);
+  color: black;
+}
+
+body {
+  color: rgb(243, 194, 204);
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: crimson;
+  border-radius: 50px;
+}
+body::-webkit-scrollbar-track {
+  background-color: gray;
+}/*# sourceMappingURL=style.css.map */

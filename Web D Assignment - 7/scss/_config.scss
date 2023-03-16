@@ -1,0 +1,36 @@
+$color:  rgb(243, 194, 204);
+$scrollbar-background-color: crimson;
+$scrollbar-background-color1: gray;
+$font-stack: Georgia, serif, Times;
+$about-color: white;
+$animation-color:white;
+$background-card-color: aqua;
+$footer-color: rgb(60, 0, 255);
+$footer-background-color:rgb(245, 223, 220);
+$nav-text-color:rgb(18, 14, 24);
+$nav-hover-color:crimson;
+$project-color:rgb(81, 198, 147);
+$project-front-background-color:white;
+$project-reverse-background-color:cyan;
+$button-hover-color:skyblue;
+$button-hover-color1: black;
+$titleSize:22px;
+
+@function set-background-color($color){
+    @if(lightness($color) > 70){
+        @return #{$button-hover-color};
+    }
+    @else{
+        @return black;
+    }
+}
+
+@mixin set-background($color){
+    color: #{$button-hover-color1};
+    background-color: set-background-color($color);
+}
+
+@mixin titleText($titleSize){
+    font-size: $titleSize;
+    
+}

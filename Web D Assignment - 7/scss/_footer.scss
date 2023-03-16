@@ -1,0 +1,13 @@
+@import 'config';
+
+.footerStn{
+    font-size: 25px;
+    text-align: center;
+    $size: 30px;
+    margin-top: $size;
+    overflow: auto;
+    width: 100%;
+    padding: $size;
+    color: $footer-color;
+    background-color: $footer-background-color;
+}

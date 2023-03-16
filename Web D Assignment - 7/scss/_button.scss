@@ -1,0 +1,20 @@
+@import 'config';
+
+%btn{
+    margin: 4px 2px;
+    padding: 15px 30px;
+    text-align: center;
+    background-color: cadetblue;
+    display: inline-block;
+    font-size: 16px;
+    border: white;
+}
+
+.btn-project{
+    @extend %btn;
+    border: 2px solid red;
+    color: aliceblue;
+    &:hover{
+        @include set-background(lighten($button-hover-color, 10));
+    }
+}

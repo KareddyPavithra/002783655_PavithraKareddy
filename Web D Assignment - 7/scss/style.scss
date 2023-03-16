@@ -1,0 +1,32 @@
+@import 'config';
+@import 'about';
+@import 'animation';
+@import 'contact';
+@import 'skills';
+@import 'project';
+@import 'navbar';
+@import 'footer';
+@import 'responsive';
+@import 'button';
+
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+    font-family: $font-stack;
+    background-color:rgb(238, 151, 89);
+    color: set-background-color(black);
+}
+
+body{
+    color: $color;
+    &::-webkit-scrollbar{
+        width: 10px;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: $scrollbar-background-color;
+        border-radius: 50px;
+    }
+    &::-webkit-scrollbar-track{
+        background-color: $scrollbar-background-color1;
+    }
+}

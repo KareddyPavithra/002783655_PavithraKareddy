@@ -1,0 +1,20 @@
+@import 'config';
+
+.sAbout{
+    display: flex;
+    padding: 30px 0;
+    margin: 0 auto;
+
+    .about{
+        display: flex;
+        margin-top: 100px;
+        width: 100%;
+        margin-right: 50px;
+        margin-left: 25px;
+
+      
+        p{
+            @include titleText(30px);
+        }
+    }
+}

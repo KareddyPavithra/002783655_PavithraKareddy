@@ -1,0 +1,41 @@
+@import 'config';
+
+.projectC{
+    display: grid;
+    height: 400px;
+    margin: 50px 20px;
+    margin-top: 80px;
+}
+
+.projectIn{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    
+}
+
+.projectFirst{
+    height: 100%;
+    width: 100%;
+    background-color: $project-front-background-color;
+    color: $project-color;
+    position: absolute;
+
+    p{
+        font-size: 20px;
+    }
+
+}
+figure{
+    img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+figcaption{
+    color: $project-color;
+    padding-top: 35px;
+    font-size: 30px;
+}
